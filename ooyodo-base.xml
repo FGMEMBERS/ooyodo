@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+  <!-- 
+    The SDM is based on Detlef FABER's work(released under GNU GPL License).
+  -->
+
+<PropertyList>
+
+  <sim include="Systems/views.xml">
+
+    <description>Ooyodo (YASim)</description>
+    <author>virt-fly</author>
+
+    <model>
+      <path>Aircraft/ooyodo/Models/ooyodo-model.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <crew>
+        <pilot>
+          <visible type="int">1</visible>
+        </pilot>
+      </crew>
+    </model> 
+
+    <sound>
+      <path>Aircraft/Generic/generic-sound.xml</path>
+    </sound>
+
+    <startup>
+      <splash-texture>Aircraft/ooyodo/ooyodo-splash.png</splash-texture>
+    </startup>
+
+    <!-- <walker>
+      <outside type="bool">false</outside>
+      <walking type="bool">false</walking>
+    </walker> -->
+
+    <!-- <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int">0</int> -->  <!-- 0 immat -->
+        <!-- <int type="int">0</int> -->  <!-- 1 immat -->
+        <!-- <int type="int">0</int> -->  <!-- 2 immat -->
+        <!-- <int type="int">0</int> -->  <!-- 3 immat -->
+        <!-- <int type="int">0</int> -->  <!-- 4 immat -->
+        <!-- <int type="int">0</int> -->  <!-- 5 immat -->
+        <!-- <int type="bool">0</int> --> <!-- 6 smoke -->
+        <!-- <int type="int">0</int> -->  <!-- 7 color -->
+        <!-- <float n="0" alias="/instrumentation/doors/bay/position-norm"/>
+      </generic>
+    </multiplay> -->
+
+    <!-- <menubar include="Dialogs/ooyodo-menu.xml"/> -->
+    
+    <help include="Systems/help.xml"/>
+
+    <ai>
+      <enabled type="bool">true</enabled>
+      <scenarios-enabled type="bool" userarchive="y">true</scenarios-enabled>
+      <scenario>../Aircraft/ooyodo/Dialogs/AI_Part</scenario>
+    </ai>
+    
+    <systems>
+      <autopilot>
+        <path>Aircraft/ooyodo/Systems/SDM-filters.xml</path>
+      </autopilot>
+    </systems> 
+    
+  </sim>
+
+  <position>
+    <depth-m>0</depth-m>
+  </position>
+  
+  <controls>
+    <flight>
+      <aileron-filtered type= "double">0</aileron-filtered>
+      <aileron0 type= "double">0</aileron0>
+      <throttle-filtered type= "double">0</throttle-filtered>
+    </flight>
+  </controls>
+  
+   <input>
+    <keyboard include="Systems/ooyodo-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <ship>
+      <file>Aircraft/ooyodo/Nasal/ship.nas</file>
+    </ship>
+    <!-- <walk>
+      <file>Aircraft/ooyodo/Nasal/walk.nas</file>
+      <script>main_loop();</script>
+    </walk> -->
+  </nasal>
+
+</PropertyList>

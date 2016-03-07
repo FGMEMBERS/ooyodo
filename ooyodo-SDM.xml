@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <controls>
+    <rudder-pos-norm type="float">0</rudder-pos-norm>
+    <valve-norm type="float">0</valve-norm>
+    <blow-norm type="float">0</blow-norm>
+    <fwd-diveplane-norm type="float">0</fwd-diveplane-norm>
+    <rear-diveplane-norm type="float">0</rear-diveplane-norm>
+  </controls>
+  
+  <environment>
+    <wave-amp type="float">0.04</wave-amp>
+    <waveloop-count type="float">0</waveloop-count>
+    <waveloop-norm type="float">0</waveloop-norm>
+  </environment>
+  
+  <orientation>
+    <roll-deg type="float">0</roll-deg>
+  </orientation>
+  
+  <max-speed-kt type="float">35.5</max-speed-kt>
+  <max-depth-m type="float">330</max-depth-m>
+  <max-rudder-deflection-deg type="float">30</max-rudder-deflection-deg>
+  <max-rudder-advance type ="float">0.1</max-rudder-advance>
+  <plane-speed type="float">100</plane-speed>
+  <roll-factor type="float">0.001</roll-factor>
+  <rudder-damp type="float">30</rudder-damp>
+  
+  <throttle-damp type="float">0.02</throttle-damp>
+  <glide-factor type="float">0</glide-factor>
+  <pitch-factor type="float">0</pitch-factor>
+  
+  <submersible type="bool">true</submersible>
+  <dive-factor type="float">0.0002</dive-factor>
+  <rise-factor type="float">0.00015</rise-factor>
+  <diveplane-effectivity-factor type="float">1</diveplane-effectivity-factor>
+  
+  <weight type="float">2000</weight>
+  
+  <ballast n="0">
+    <name>Main Ballast Tank</name>
+    <capacity-percent>80</capacity-percent>
+    <ballast-norm type="float">0</ballast-norm>
+  </ballast>
+  
+</PropertyList>

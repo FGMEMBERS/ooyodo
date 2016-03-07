@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+	<path>Aircraft/ooyodo/Models/F1M2/Models/F1M2.ac</path>
+        <texture-path>Aircraft/ooyodo/Models/F1M2/Models/Textures/gray</texture-path>
+
+
+  <!-- <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/F1M2/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal> -->
+
+
+  <animation>
+    <object-name>fuselage</object-name>
+    <object-name>upperwing</object-name>
+    <object-name>lowerwing</object-name>
+    <object-name>right-aileron</object-name>
+    <object-name>left-aileron</object-name>
+    <object-name>right-strut</object-name>
+    <object-name>left-strut</object-name>
+    <object-name>right-pillar-1</object-name>
+    <object-name>right-pillar-2</object-name>
+    <object-name>right-pillar-3</object-name>
+    <object-name>right-pillar-4</object-name>
+    <object-name>left-pillar-1</object-name>
+    <object-name>left-pillar-2</object-name>
+    <object-name>left-pillar-3</object-name>
+    <object-name>left-pillar-4</object-name>
+    <object-name>hstab</object-name>
+    <object-name>vstab</object-name>
+    <object-name>elevator</object-name>
+    <object-name>rudder1</object-name>
+    <object-name>front-canopy</object-name>
+    <object-name>rear-canopy</object-name>
+    <object-name>pitot</object-name>
+    <object-name>ailette01</object-name>
+    <object-name>ailette02</object-name>
+    <object-name>ailette03</object-name>
+    <object-name>ailette04</object-name>
+    <object-name>ailette05</object-name>
+    <object-name>ailette06</object-name>
+    <object-name>ailette07</object-name>
+    <object-name>ailette08</object-name>
+    <object-name>ailette09</object-name>
+    <object-name>ailette10</object-name>
+    <object-name>ailette11</object-name>
+    <object-name>ailette12</object-name>
+    <object-name>ailette13</object-name>
+    <object-name>ailette14</object-name>
+    <object-name>ailette15</object-name>
+    <object-name>ailette16</object-name>
+    <object-name>visee</object-name>
+    <object-name>supportvisee</object-name>
+    <object-name>float</object-name>
+    <object-name>float-bottom</object-name>
+    <object-name>main-float-pillar</object-name>
+    <object-name>main-float-r-pillar</object-name>
+    <object-name>main-float-l-pillar</object-name>
+    <object-name>right-side-float</object-name>
+    <object-name>left-side-float</object-name>
+    <object-name>right-float-pillar-1</object-name>
+    <object-name>right-float-pillar-2</object-name>
+    <object-name>right-float-pillar-3</object-name>
+    <object-name>right-float-pillar-4</object-name>
+    <object-name>left-float-pillar-1</object-name>
+    <object-name>left-float-pillar-2</object-name>
+    <object-name>left-float-pillar-3</object-name>
+    <object-name>left-float-pillar-4</object-name>
+    <object-name>Cylinder.000</object-name>
+    <object-name>Cylinder.008</object-name>
+    <object-name>Cylinder.009</object-name>
+    <object-name>Cylinder.011</object-name>
+    <object-name>Cylinder.012</object-name>
+    <object-name>Cylinder.015</object-name>
+    <object-name>Cylinder.016</object-name>
+    <object-name>Cylinder.017</object-name>
+    <object-name>Cylinder.018</object-name>
+    <object-name>Cylinder.072</object-name>
+    <object-name>Circle</object-name>
+    <object-name>Spinner</object-name>
+    <object-name>propeller</object-name>
+       <object-name>propdisc</object-name>
+       <object-name>propblur</object-name>
+       <object-name>front-canopy-glass</object-name>
+       <object-name>rear-canopy-glass</object-name>
+  </animation>
+
+
+   <!-- Transparent Surfaces for Rembrandt rendering -->
+   <effect>
+       <inherits-from>Effects/model-transparent</inherits-from>
+       <!-- <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from> -->
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+       <object-name>propdisc</object-name>
+       <object-name>propblur</object-name>
+       <object-name>front-canopy-glass</object-name>
+       <object-name>rear-canopy-glass</object-name>
+   </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+       <object-name>front-canopy-glass</object-name>
+       <object-name>rear-canopy-glass</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+       <object-name>front-canopy-glass</object-name>
+       <object-name>rear-canopy-glass</object-name>
+  </animation>
+
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>upperwing</object-name>
+    <object-name>lowerwing</object-name>
+    <object-name>right-aileron</object-name>
+    <object-name>left-aileron</object-name>
+    <object-name>right-strut</object-name>
+    <object-name>left-strut</object-name>
+    <object-name>right-pillar-1</object-name>
+    <object-name>right-pillar-2</object-name>
+    <object-name>right-pillar-3</object-name>
+    <object-name>right-pillar-4</object-name>
+    <object-name>left-pillar-1</object-name>
+    <object-name>left-pillar-2</object-name>
+    <object-name>left-pillar-3</object-name>
+    <object-name>left-pillar-4</object-name>
+    <object-name>hstab</object-name>
+    <object-name>vstab</object-name>
+    <object-name>elevator</object-name>
+    <object-name>rudder1</object-name>
+    <object-name>front-canopy</object-name>
+    <object-name>rear-canopy</object-name>
+    <object-name>pitot</object-name>
+    <object-name>ailette01</object-name>
+    <object-name>ailette02</object-name>
+    <object-name>ailette03</object-name>
+    <object-name>ailette04</object-name>
+    <object-name>ailette05</object-name>
+    <object-name>ailette06</object-name>
+    <object-name>ailette07</object-name>
+    <object-name>ailette08</object-name>
+    <object-name>ailette09</object-name>
+    <object-name>ailette10</object-name>
+    <object-name>ailette11</object-name>
+    <object-name>ailette12</object-name>
+    <object-name>ailette13</object-name>
+    <object-name>ailette14</object-name>
+    <object-name>ailette15</object-name>
+    <object-name>ailette16</object-name>
+    <object-name>visee</object-name>
+    <object-name>supportvisee</object-name>
+    <object-name>float</object-name>
+    <object-name>float-bottom</object-name>
+    <object-name>main-float-pillar</object-name>
+    <object-name>main-float-r-pillar</object-name>
+    <object-name>main-float-l-pillar</object-name>
+    <object-name>right-side-float</object-name>
+    <object-name>left-side-float</object-name>
+    <object-name>right-float-pillar-1</object-name>
+    <object-name>right-float-pillar-2</object-name>
+    <object-name>right-float-pillar-3</object-name>
+    <object-name>right-float-pillar-4</object-name>
+    <object-name>left-float-pillar-1</object-name>
+    <object-name>left-float-pillar-2</object-name>
+    <object-name>left-float-pillar-3</object-name>
+    <object-name>left-float-pillar-4</object-name>
+    <object-name>Cylinder.000</object-name>
+    <object-name>Cylinder.008</object-name>
+    <object-name>Cylinder.009</object-name>
+    <object-name>Cylinder.011</object-name>
+    <object-name>Cylinder.012</object-name>
+    <object-name>Cylinder.015</object-name>
+    <object-name>Cylinder.016</object-name>
+    <object-name>Cylinder.017</object-name>
+    <object-name>Cylinder.018</object-name>
+    <object-name>Cylinder.072</object-name>
+    <object-name>Circle</object-name>
+    <object-name>Spinner</object-name>
+    <object-name>propeller</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>Texture/gray/texture.png</texture>
+  </animation>
+
+
+  <!-- wake -->
+  <model>
+    <path>Aircraft/F1M2/Models/Effects/wakeC.xml</path>
+    <offsets>
+      <x-m>  0.640 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.468 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model> 
+
+  <model>
+    <path>Aircraft/F1M2/Models/Effects/wakeG.xml</path>
+    <offsets>
+      <x-m>  0.640 </x-m>
+      <y-m> -4.20 </y-m>
+      <z-m> -1.408 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model> 
+
+  <model>
+    <path>Aircraft/F1M2/Models/Effects/wakeD.xml</path>
+    <offsets>
+      <x-m>  0.640 </x-m>
+      <y-m>  4.20 </y-m>
+      <z-m> -1.408 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Pilot -->
+  <!-- <model>
+    <path>Aircraft/F1M2/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m>  0.340 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  1.148 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model> -->
+
+<!-- <animation>
+  <type>select</type>
+  <object-name>pilot</object-name>
+  <condition>
+   <greater-than>
+    <property>sim/current-view/view-number</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation > -->
+
+  <!-- propeller -->
+  <animation>
+    <name>propcomplete</name>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <object-name>propeller</object-name>
+  </animation>
+
+<animation>
+  <type>select</type>
+  <object-name>propdisc</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>50</value>
+      </greater-than>
+    </condition>
+ </animation>
+
+<animation>
+  <type>select</type>
+  <object-name>propblur</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>10.000</value>
+      </greater-than>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>50.001</value>
+      </less-than>
+    </and>
+    </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>propeller</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>10</value>
+      </less-than>
+    </condition>
+ </animation>
+
+ <animation>
+    <type>spin</type>
+    <object-name>propcomplete</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor> 1 </factor>
+    <center>
+     <x-m>-2.391</x-m>
+     <y-m>0.0</y-m>
+     <z-m>0.72</z-m>
+    </center>
+    <axis>
+     <x>-1.0</x>
+     <y>0.0</y>
+     <z>0.0</z>
+    </axis>
+ </animation>
+
+
+  <!-- Lights -->
+  <!-- <model>
+    <name>RedWingtipLight</name>
+    <path>Aircraft/F1M2/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m>  -0.57 </x-m>
+      <y-m> -5.38 </y-m>
+      <z-m>  2.13 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>GreenWingtipLight</name>
+    <path>Aircraft/F1M2/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> -0.57 </x-m>
+      <y-m> 5.38 </y-m>
+      <z-m> 2.13 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>TailLight</name>
+    <path>Aircraft/F1M2/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> 5.5 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.55 </z-m>
+    </offsets>
+  </model> -->
+
+
+</PropertyList>
+

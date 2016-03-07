@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <key n="11">
+    <name>Ctrl-K</name>
+    <desc>port-direction</desc>
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/armament/station[0]/E13A1</property>
+      <value type="bool">1</value>
+    </binding>
+  </key>
+
+  <key n="12">
+    <name>Ctrl-L</name>
+    <desc>starboard-direction</desc>
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/armament/station[1]/E13A1</property>
+      <value type="bool">1</value>
+    </binding>
+  </key>
+
+  <key n="101">
+    <name>e</name>
+    <desc>Naval guns</desc>
+    <binding>
+       <command>property-assign</command>
+       <property>/controls/armament/station[2]/navalguns</property>
+       <value type="bool">1</value>
+    </binding>
+  </key>
+
+  <key n="109">
+    <name>m</name>
+    <desc>Reset catapult</desc>
+    <binding>
+       <command>property-assign</command>
+       <property>controls/flight/rudder</property>
+       <value type="bool">1</value>
+    </binding>
+  </key>
+
+</PropertyList>

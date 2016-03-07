@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <scenario>
+
+    <name>Boat</name>
+  
+    <description>
+    </description>
+
+    <entry>
+      <callsign>Player-Boat</callsign>
+      <type>aircraft</type>
+      <class>light</class>
+      <model>Models/Geometry/null.ac</model>
+    </entry>
+
+   </scenario>
+
+</PropertyList>

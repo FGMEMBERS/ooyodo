@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+
+
+<PropertyList>
+
+	<path>high-angle.ac</path>
+
+
+  <model>
+    <name>barell</name>
+		<path>hag-barell.ac</path>
+		<offsets>
+			<x-m>-0.99</x-m>
+			<y-m>0</y-m>
+			<z-m>7.54</z-m>
+			<heading-deg>0</heading-deg>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+  </model>
+
+	<!--<model> 
+		<name>explosion</name>
+		<path>Aircraft/ooyodo/Models/Effects/explosion-m4.xml</path>
+		<offsets>
+			<x-m>-5</x-m>
+			<y-m>0</y-m>
+			<z-m>14.0</z-m>
+			<heading-deg>0</heading-deg>
+
+		</offsets>
+	</model>-->
+
+</PropertyList>
